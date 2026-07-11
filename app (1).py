@@ -16,14 +16,7 @@ import sys
 warnings.filterwarnings('ignore')
 
 # --- Force install missing packages if not found ---
-try:
-    import plotly
-    import sklearn
-    import xgboost
-except ImportError:
-    st.warning("Installing missing packages...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly==5.22.0", "scikit-learn==1.5.0", "xgboost==2.0.3"])
-    st.experimental_rerun()
+
 
 # --- Page Configuration ---
 st.set_page_config(
