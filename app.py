@@ -1,3 +1,5 @@
+import subprocess
+import sys
 subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly==5.22.0", "scikit-learn==1.5.0", "xgboost==2.0.3", "prophet==1.3.0"])
 import streamlit as st
 import pandas as pd
@@ -10,8 +12,7 @@ from sklearn.decomposition import PCA
 import xgboost as xgb
 import numpy as np
 import warnings
-import subprocess
-import sys
+
 
 warnings.filterwarnings('ignore')
 
